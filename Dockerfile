@@ -5,6 +5,6 @@ RUN chmod -R 0777 ~/dz-docker
 RUN cd ~/dz-docker
 RUN git clone https://github.com/AlexanderSayner/JavaWorldLandmarks.git
 RUN cd JavaWorldLandmarks
-RUN mvn package
+RUN mvn package --illegal-access
 RUN cd target
 RUN cp *.war /var/lib/tomcat9/webapps/
