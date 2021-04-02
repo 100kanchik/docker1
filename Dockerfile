@@ -4,7 +4,7 @@ RUN mkdir /root/dz-docker
 RUN chmod -R 0777 /root/dz-docker
 RUN cd /root/dz-docker
 RUN git clone https://github.com/AlexanderSayner/JavaWorldLandmarks.git
-RUN cd /root/dz-docker/JavaWorldLandmarks/
-RUN mvn package
-RUN cd target
-RUN cp *.war /var/lib/tomcat9/webapps/
+#RUN cd /root/dz-docker/JavaWorldLandmarks/
+#RUN mvn package
+#RUN cd target
+#RUN cp *.war /var/lib/tomcat9/webapps/
