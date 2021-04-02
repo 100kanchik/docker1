@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM debian:10
 RUN apt-get update && apt install default-jdk tomcat9 maven git apt-utils -y
 RUN mkdir ~/dz-docker
 RUN chmod -R 0777 ~/dz-docker
