@@ -1,7 +1,8 @@
 FROM tomcat
 RUN apt-get update && apt install maven git apt-utils -y
 RUN mkdir ~/dz-docker
-RUN cd ~//dz-docker
+RUN chmod -R 0777 ~/dz-docker
+RUN cd ~/dz-docker
 RUN git clone https://github.com/AlexanderSayner/JavaWorldLandmarks.git
 RUN cd JavaWorldLandmarks
 RUN mvn package
