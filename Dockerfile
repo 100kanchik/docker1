@@ -1,6 +1,7 @@
 FROM tomcat
-RUN apt-get update && apt install maven git apt-utils -y
-CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+COPY  Landmarks-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
+#RUN apt-get update && apt install maven git apt-utils -y
+#CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
 #RUN mkdir /root/dz-docker
 #RUN chmod -R 0777 /root/dz-docker
 #RUN cd /root/dz-docker
