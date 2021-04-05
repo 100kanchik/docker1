@@ -6,4 +6,6 @@ RUN mkdir /root/dz-docker && chmod -R 0777 /root/dz-docker && cd /root/dz-docker
 #RUN cd /root/dz-docker/JavaWorldLandmarks/
 #RUN cd target
 #RUN cp *.war /var/lib/tomcat9/webapps/
-RUN  ["tomcat9", "-g", "daemon off;"]
+#RUN  ["tomcat9", "-g", "daemon off;"]
+CMD ["/usr/local/tomcat/bin/catalina.sh run", "-g", "daemon off;"]
+#RUN /usr/local/tomcat/bin/catalina.sh run
